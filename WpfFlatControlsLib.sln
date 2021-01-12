@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.1321
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfFlatControlsLib", "WpfFlatControlsLib\WpfFlatControlsLib.csproj", "{7C1FD489-1DD9-4A7C-A54D-03F5D44508AE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlatControlsTestProject", "FlatControlsTestProject\FlatControlsTestProject.csproj", "{69B26846-7A03-46A4-BF2B-A53A161E840F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7C1FD489-1DD9-4A7C-A54D-03F5D44508AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C1FD489-1DD9-4A7C-A54D-03F5D44508AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C1FD489-1DD9-4A7C-A54D-03F5D44508AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C1FD489-1DD9-4A7C-A54D-03F5D44508AE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{69B26846-7A03-46A4-BF2B-A53A161E840F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{69B26846-7A03-46A4-BF2B-A53A161E840F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{69B26846-7A03-46A4-BF2B-A53A161E840F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{69B26846-7A03-46A4-BF2B-A53A161E840F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2668DEEA-3C5B-401A-8E38-55856F34D998}
+	EndGlobalSection
+EndGlobal
