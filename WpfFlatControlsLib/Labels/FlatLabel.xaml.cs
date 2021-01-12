@@ -24,7 +24,7 @@ namespace WpfFlatControlsLib.Labels
         public FlatLabel()
         {
             InitializeComponent();
-            //[Category("FlatLabel Properties")]
+            //[Category("FlatLabel Properties")]            
         }
 
         public enum Rounding
@@ -147,6 +147,19 @@ namespace WpfFlatControlsLib.Labels
             FlatLabel fl = (FlatLabel)d;
             fl.MainControl_SizeChanged(fl, null);
         }
+        #endregion
+
+        #region TextPaddingProperty
+        [Category("FlatLabel Properties")]
+        public Thickness TextPadding
+        {
+            get { return (Thickness)GetValue(TextPaddingProperty); }
+            set { SetValue(TextPaddingProperty, value); }
+        }
+
+        // Using a DependencyProperty as the backing store for TextPadding.  This enables animation, styling, binding, etc...
+        public static readonly DependencyProperty TextPaddingProperty =
+            DependencyProperty.Register("TextPadding", typeof(Thickness), typeof(FlatLabel), new PropertyMetadata(new Thickness(0)));
         #endregion
 
         private void MainControl_SizeChanged(object sender, SizeChangedEventArgs e)

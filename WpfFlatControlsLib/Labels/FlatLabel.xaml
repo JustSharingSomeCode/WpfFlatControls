@@ -7,6 +7,6 @@
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800" Width="250" Height="50" SizeChanged="MainControl_SizeChanged">
     <Border x:Name="ControlBorder" CornerRadius="{Binding ElementName=MainControl, Path=CornerRadius}" BorderBrush="{Binding ElementName=MainControl, Path=BorderBrush}" BorderThickness="{Binding ElementName=MainControl, Path=BorderThickness}" Background="{Binding ElementName=MainControl, Path=Background}">
-        <Label x:Name="ControlText" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Padding="0" Foreground="{Binding ElementName=MainControl, Path=Foreground}" Content="{Binding ElementName=MainControl, Path=Text}" FontFamily="{Binding ElementName=MainControl, Path=FontFamily}" FontSize="{Binding ElementName=MainControl, Path=FontSize}"/>
+        <Label x:Name="ControlText" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Padding="{Binding ElementName=MainControl, Path=TextPadding}" Foreground="{Binding ElementName=MainControl, Path=Foreground}" Content="{Binding ElementName=MainControl, Path=Text}" FontFamily="{Binding ElementName=MainControl, Path=FontFamily}" FontSize="{Binding ElementName=MainControl, Path=FontSize}"/>
     </Border>
 </UserControl>

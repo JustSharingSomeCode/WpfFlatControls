@@ -1,0 +1,16 @@
+﻿<UserControl
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:WpfFlatControlsLib.Buttons"
+             xmlns:Labels="clr-namespace:WpfFlatControlsLib.Labels" x:Name="MainControl" x:Class="WpfFlatControlsLib.Buttons.FlatButton"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800" Width="250" Height="50" SnapsToDevicePixels="True" SizeChanged="MainControl_SizeChanged" Loaded="MainControl_Loaded" MouseLeftButtonDown="MainControl_MouseLeftButtonDown" MouseLeftButtonUp="MainControl_MouseLeftButtonUp" MouseLeave="MainControl_MouseLeave">
+    <Border x:Name="ControlBorder" Background="{Binding ElementName=MainControl, Path=Background}" CornerRadius="{Binding ElementName=MainControl, Path=CornerRadius}" BorderThickness="{Binding ElementName=MainControl, Path=BorderThickness}" BorderBrush="{Binding ElementName=MainControl, Path=BorderBrush}">
+        <Grid x:Name="MainGrid">
+            <Labels:FlatLabel x:Name="ControlText" Width="Auto" Height="Auto" Foreground="{Binding ElementName=MainControl, Path=Foreground}" TextPadding="50,0,0,0" Text="{Binding ElementName=MainControl, Path=Text}"/>
+            <Labels:FlatLabel x:Name="ControlIcon" HorizontalAlignment="Left" Background="{Binding ElementName=MainControl, Path=IconBackground}" Foreground="{Binding ElementName=MainControl, Path=IconForeground}" Width="100" Height="Auto" MaintainProportions="True" Text="{Binding ElementName=MainControl, Path=IconText}" BorderRounding="{Binding ElementName=MainControl, Path=BorderRounding}" Margin="{Binding ElementName=MainControl, Path=IconMargin}" SizeChanged="ControlIcon_SizeChanged"/>
+        </Grid>
+    </Border>
+</UserControl>

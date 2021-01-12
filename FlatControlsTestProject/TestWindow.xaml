@@ -4,12 +4,13 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:FlatControlsTestProject"
-        xmlns:Labels="clr-namespace:WpfFlatControlsLib.Labels;assembly=WpfFlatControlsLib" x:Class="FlatControlsTestProject.TestWindow"
+        xmlns:Labels="clr-namespace:WpfFlatControlsLib.Labels;assembly=WpfFlatControlsLib" xmlns:Buttons="clr-namespace:WpfFlatControlsLib.Buttons;assembly=WpfFlatControlsLib" x:Class="FlatControlsTestProject.TestWindow"
         mc:Ignorable="d"
         Title="TestWindow" Height="450" Width="800">
     <Grid>
 
-        <Labels:FlatLabel HorizontalAlignment="Left" Height="71" Margin="181,97,0,0" VerticalAlignment="Top" Width="247" Foreground="White" BorderBrush="Black" Background="Red" CornerRadius="15" BorderThickness="5,2" FontFamily="SAO UI" FontSize="20" Text="Texto de prueba" RenderTransformOrigin="0.5,0.5" BorderRounding="Auto"/>
+        <Labels:FlatLabel HorizontalAlignment="Left" Height="71" Margin="181,97,0,0" VerticalAlignment="Top" Width="247" Foreground="White" BorderBrush="Black" Background="Red" CornerRadius="15" BorderThickness="5,2" FontFamily="SAO UI" FontSize="20" Text="Texto" RenderTransformOrigin="0.5,0.5" BorderRounding="Auto" TextPadding="0"/>
+        <Buttons:FlatButton HorizontalAlignment="Left" Height="48" Margin="178,44,0,0" VerticalAlignment="Top" Width="250" Foreground="White" IconForeground="White" BorderThickness="2" IconMargin="2"/>
 
     </Grid>
 </Window>

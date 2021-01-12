@@ -22,6 +22,6 @@ namespace FlatControlsTestProject
         public TestWindow()
         {
             InitializeComponent();
-        }
+        }        
     }
 }
