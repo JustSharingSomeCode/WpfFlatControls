@@ -122,7 +122,7 @@ namespace WpfFlatControlsLib.Buttons
 
         // Using a DependencyProperty as the backing store for Text.  This enables animation, styling, binding, etc...
         public static readonly DependencyProperty IconTextProperty =
-            DependencyProperty.Register("IconText", typeof(string), typeof(FlatButton), new PropertyMetadata("Icon"));
+            DependencyProperty.Register("IconText", typeof(string), typeof(FlatButton), new PropertyMetadata("\uE0E7"));
         #endregion
 
         #region BorderThicknessProperty
@@ -228,11 +228,37 @@ namespace WpfFlatControlsLib.Buttons
             DependencyProperty.Register("IconMargin", typeof(double), typeof(FlatButton), new PropertyMetadata((double)0));
         #endregion
 
+        #region IconFontProperty
+        [Category("FlatButton Properties")]
+        public FontFamily IconFont
+        {
+            get { return (FontFamily)GetValue(IconFontProperty); }
+            set { SetValue(IconFontProperty, value); }
+        }
+
+        // Using a DependencyProperty as the backing store for IconFont.  This enables animation, styling, binding, etc...
+        public static readonly DependencyProperty IconFontProperty =
+            DependencyProperty.Register("IconFont", typeof(FontFamily), typeof(FlatButton), new PropertyMetadata(new FontFamily("Segoe MDL2 Assets")));
+        #endregion
+
+        #region IconSizeProperty
+        [Category("FlatButton Properties")]
+        public double IconSize
+        {
+            get { return (double)GetValue(IconSizeProperty); }
+            set { SetValue(IconSizeProperty, value); }
+        }
+
+        // Using a DependencyProperty as the backing store for IconSize.  This enables animation, styling, binding, etc...
+        public static readonly DependencyProperty IconSizeProperty =
+            DependencyProperty.Register("IconSize", typeof(double), typeof(FlatButton), new PropertyMetadata((double)12));
+        #endregion
+
         private void MainControl_SizeChanged(object sender, SizeChangedEventArgs e)
         {            
             if (MaintainProportions)
-            {
-                Width = ActualHeight;
+            {                
+                Height = ActualWidth;
             }
             UpdateUI();
         }

@@ -164,11 +164,12 @@ namespace WpfFlatControlsLib.Labels
 
         private void MainControl_SizeChanged(object sender, SizeChangedEventArgs e)
         {
+            
             if(MaintainProportions)
             {
-                Width = ActualHeight;
+                Width = ActualHeight;                
             }
-
+            
             if(BorderRounding == Rounding.Auto)
             {
                 CornerRadius = new CornerRadius(Math.Min(ActualHeight / 2, ActualWidth / 2));

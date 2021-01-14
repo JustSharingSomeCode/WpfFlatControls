@@ -10,7 +10,7 @@
     <Border x:Name="ControlBorder" Background="{Binding ElementName=MainControl, Path=Background}" CornerRadius="{Binding ElementName=MainControl, Path=CornerRadius}" BorderThickness="{Binding ElementName=MainControl, Path=BorderThickness}" BorderBrush="{Binding ElementName=MainControl, Path=BorderBrush}">
         <Grid x:Name="MainGrid">
             <Labels:FlatLabel x:Name="ControlText" Width="Auto" Height="Auto" Foreground="{Binding ElementName=MainControl, Path=Foreground}" TextPadding="50,0,0,0" Text="{Binding ElementName=MainControl, Path=Text}"/>
-            <Labels:FlatLabel x:Name="ControlIcon" HorizontalAlignment="Left" Background="{Binding ElementName=MainControl, Path=IconBackground}" Foreground="{Binding ElementName=MainControl, Path=IconForeground}" Width="100" Height="Auto" MaintainProportions="True" Text="{Binding ElementName=MainControl, Path=IconText}" BorderRounding="{Binding ElementName=MainControl, Path=BorderRounding}" Margin="{Binding ElementName=MainControl, Path=IconMargin}" SizeChanged="ControlIcon_SizeChanged"/>
+            <Labels:FlatLabel x:Name="ControlIcon" HorizontalAlignment="Left" Background="{Binding ElementName=MainControl, Path=IconBackground}" Foreground="{Binding ElementName=MainControl, Path=IconForeground}" Width="50" Height="Auto" MaintainProportions="True" Text="{Binding ElementName=MainControl, Path=IconText}" BorderRounding="{Binding ElementName=MainControl, Path=BorderRounding}" Margin="{Binding IconMargin, ElementName=MainControl}" SizeChanged="ControlIcon_SizeChanged" FontFamily="{Binding ElementName=MainControl, Path=IconFont}" FontSize="{Binding ElementName=MainControl, Path=IconSize}"/>
         </Grid>
     </Border>
 </UserControl>
