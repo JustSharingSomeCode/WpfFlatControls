@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Data;
 
-namespace WpfCoolUcLib.Converters
+namespace WpfFlatControlsLib.Converters
 {
     public class DivideByTwoConverter : IValueConverter
     {

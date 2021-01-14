@@ -5,7 +5,7 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:WpfFlatControlsLib.Scrolls"
              xmlns:Buttons="clr-namespace:WpfFlatControlsLib.Buttons" x:Name="MainControl" x:Class="WpfFlatControlsLib.Scrolls.FlatScroll"
-             xmlns:converters="clr-namespace:WpfCoolUcLib.Converters"
+             xmlns:converters="clr-namespace:WpfFlatControlsLib.Converters"
              mc:Ignorable="d" Width="50" Height="250" SizeChanged="MainControl_SizeChanged">
     <UserControl.Resources>
         <converters:DivideByTwoConverter x:Key="DivideByTwoConverter"/>
